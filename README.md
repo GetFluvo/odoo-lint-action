@@ -1,6 +1,6 @@
 # odoo-lint action
 
-A GitHub Action for [odoo-lint](https://github.com/bosd/odoo-lint) (`odl`),
+A GitHub Action for [odoo-lint](https://github.com/GetFluvo/odoo-lint) (`odl`),
 a fast linter for Odoo addons with the checks of pylint-odoo and OCA's
 manifest, XML and PO checks.
 
@@ -26,7 +26,7 @@ jobs:
       - uses: actions/checkout@v6
         with:
           persist-credentials: false
-      - uses: bosd/odoo-lint-action@v1
+      - uses: GetFluvo/odoo-lint-action@v1
 ```
 
 ## Code scanning
@@ -46,7 +46,7 @@ jobs:
       - uses: actions/checkout@v6
         with:
           persist-credentials: false
-      - uses: bosd/odoo-lint-action@v1
+      - uses: GetFluvo/odoo-lint-action@v1
         with:
           sarif: true
 ```
